@@ -14,7 +14,7 @@ const BookCard = ({ book }) => {
   };
 
   return (
-    <div className="book-card">
+    <article className="book-card">
       {coverId && <img src={coverUrl} alt={`Cover of ${book.title}`} />}
       <h2>{book.title}</h2>
       <p>First published in: {book.first_publish_year}</p>
@@ -25,7 +25,7 @@ const BookCard = ({ book }) => {
           Search on Amazon
         </button>
       )}
-    </div>
+    </article>
   );
 };
 

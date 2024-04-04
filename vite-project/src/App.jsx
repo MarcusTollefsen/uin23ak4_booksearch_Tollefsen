@@ -19,11 +19,11 @@ function App() {
   }, [query]);
 
   return (
-    <div className="container">
+    <main className="container">
       <Header />
       <SearchBar query={query} setQuery={setQuery} />
       <SearchResults query={debouncedQuery} />
-    </div>
+    </main>
   );
 }
 
