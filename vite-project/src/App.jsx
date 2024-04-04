@@ -8,13 +8,12 @@ function App() {
   const [debouncedQuery, setDebouncedQuery] = useState('');
 
   useEffect(() => {
-    // Setter opp en timeout for å forsinke søket
+    // Setter opp en timeout for å forsinke søket. for å forhindre at query blir sendt for hvert tastetryk
     const handler = setTimeout(() => {
       setDebouncedQuery(query);
-    }, 3000); // Vent i 3 sekunder før søket utføres
+    }, 3000);
 
     // Rens opp forrige timeout hvis query endres før 3 sekunder er over
-    // eller komponenten avmonteres
     return () => clearTimeout(handler);
   }, [query]);
 
