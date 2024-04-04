@@ -17,11 +17,11 @@ const BookCard = ({ book }) => {
     <div className="book-card">
       {coverId && <img src={coverUrl} alt={`Cover of ${book.title}`} />}
       <h2>{book.title}</h2>
-      <p>First published in: {book.first_publish_year || 'Unknown'}</p>
-      <p>Author: {book.author_name ? book.author_name.join(', ') : 'Unknown'}</p>
+      <p>First published in: {book.first_publish_year}</p>
+      <p>Author: {book.author_name}</p>
       {book.ratings_average && <p>Average Rating: {book.ratings_average}</p>}
       {amazonId && (
-        <button onClick={handleAmazonSearch} style={{padding: '10px', marginTop: '10px'}}>
+        <button onClick={handleAmazonSearch}>
           Search on Amazon
         </button>
       )}

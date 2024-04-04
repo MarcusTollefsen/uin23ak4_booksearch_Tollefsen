@@ -8,9 +8,9 @@ const SearchResults = ({ query }) => {
     const fetchBooks = async () => {
       let url = 'https://openlibrary.org/search.json?';
       if (query.length > 2) {
-        url += `q=${query}&limit=20`; // Antar at søkeforespørselen ikke inneholder tegn som må prosentkodes
+        url += `q=${query}&limit=20`; 
       } else {
-        url += 'q=James+Bond&limit=20'; // Standard søk, begrenset til de første 20 resultatene
+        url += 'q=James+Bond&limit=20'; 
       }
     
       try {

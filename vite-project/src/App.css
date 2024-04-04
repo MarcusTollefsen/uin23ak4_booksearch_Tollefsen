@@ -29,6 +29,17 @@ header {
 }
 
 
+input{
+  padding: 10px;
+  width: 80%;
+  max-width: 500px;
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+
 .search-results {
   display: grid;
   grid-template-columns: repeat(5, 1fr); 
@@ -43,9 +54,9 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #ffffff86;
+  background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .book-card img {
