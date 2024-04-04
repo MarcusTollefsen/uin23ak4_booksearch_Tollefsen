@@ -12,7 +12,7 @@ function App() {
     // Setter opp en timeout for å forsinke søket. for å forhindre at query blir sendt for hvert tastetryk
     const handler = setTimeout(() => {
       setDebouncedQuery(query);
-    }, 3000);
+    }, 500);
 
     // Rens opp forrige timeout hvis query endres før 3 sekunder er over
     return () => clearTimeout(handler);
