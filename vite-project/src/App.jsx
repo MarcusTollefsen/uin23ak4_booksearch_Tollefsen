@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import SearchBar from './components/SearchBar';
 import SearchResults from './components/SearchResults';
+import Header from './components/Header';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <div className="container">
+      <Header />
       <SearchBar query={query} setQuery={setQuery} />
       <SearchResults query={debouncedQuery} />
     </div>
